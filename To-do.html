@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do Web App</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="side-panel">
+            <h3>Side Panel</h3>
+        </div>
+
+        <div class="main-content">
+            <div class="main-header">
+                <div class="avatar">
+                    <img src="https://i.pinimg.com/736x/8b/16/7a/8b167af653c2399dd93b952a48740620.jpg" alt="Avatar">
+                </div>
+            </div>
+            <hr width="101%">
+
+            <div class="header">
+                <h1>To-Do Web App</h1>
+                <button class="create-button">Create</button>
+            </div>
+
+            <div class="section">
+
+                <div class="column">
+                    <h3>To Do</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, quo?</p>
+                </div>
+
+                <div class="column">
+                    <h3>In-progress</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, incidunt!</p>
+                </div>
+
+                <div class="column">
+                    <h3>Done</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, ab.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>Create New Task</h2>
+            <form id="todoForm">
+                <label for="title">Title:</label><br>
+                <input type="text" id="title" name="title" required><br>
+
+                <label for="description">Description:</label><br>
+                <textarea id="description" name="description" required></textarea><br>
+
+                <label for="start-date">Start Date:</label><br>
+                <input type="date" id="start-date" name="start-date" required><br>
+
+                <label for="end-date">End Date:</label><br>
+                <input type="date" id="end-date" name="end-date" required><br>
+
+                <button type="button" id="savebutton" class="save-button">Save</button>
+                <button type="button" id="cancelbutton" class="cancel-button">Cancel</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="To-do.js"></script>
+</body>
+
+</html>
